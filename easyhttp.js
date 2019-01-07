@@ -15,7 +15,7 @@ function easyHTTP() {
 
 // FOUR DIFFERENT PROTOTYPE METHODS
 
-// Make an HTTP GET Request
+// 1 - Make an HTTP GET Request
 easyHTTP.prototype.get = function(url, callback) {
    this.http.open('GET', url, true);
 
@@ -32,7 +32,7 @@ easyHTTP.prototype.get = function(url, callback) {
    this.http.send();
 }
 
-// Make an HTTP POST Request
+// 2 - Make an HTTP POST Request
 easyHTTP.prototype.post = function(url, data, callback){
    this.http.open('POST', url, true);
 
@@ -46,7 +46,7 @@ easyHTTP.prototype.post = function(url, data, callback){
 
    this.http.send(JSON.stringify(data));
 }
-// Make an HTTP PUT Request
+// 3 - Make an HTTP PUT Request
 easyHTTP.prototype.put = function(url, data, callback){
    this.http.open('PUT', url, true);
 
@@ -61,7 +61,7 @@ easyHTTP.prototype.put = function(url, data, callback){
    this.http.send(JSON.stringify(data));
 }
 
-// Make an HTTP DELETE Request
+// 4 - Make an HTTP DELETE Request
 easyHTTP.prototype.delete = function(url, callback) {
    this.http.open('DELETE', url, true);
 
